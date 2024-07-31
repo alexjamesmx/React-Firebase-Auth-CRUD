@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {process.env.REACT_APP_SALUDO}
+          Firebase Login, Dashboard and Basic CRUD operations with
+          React/Firebase
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="dashboard"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          go to dashboard
         </a>
       </header>
     </div>
