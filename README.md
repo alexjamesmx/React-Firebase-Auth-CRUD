@@ -9,11 +9,8 @@
 
 <div align="center">
 <strong> Basic template for a React app with Firebase integration. </strong>
-
 <img src="public/ss1.png" alt="Screenshot" width="400px" height="400px"/>
-
 <img src="public/image.png" alt="Screenshot" width="400px" height="400px"/>
-
 </div>
 
 ## Prerequisites
