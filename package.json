@@ -1,5 +1,6 @@
 {
   "name": "linktree",
+  "homepage": "https://project2.alexjamesmx.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

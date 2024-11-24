@@ -1,12 +1,9 @@
-import React, {useState} from "react";
-import {
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
-import {auth} from "../firebase/firebase";
-import {useNavigate} from "react-router-dom";
+import React, { useState } from "react";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 import AuthProvider from "../components/authProvider";
-import style from './loginView.module.css'
+import style from "./loginView.module.css";
 export default function LoginView() {
   const navigate = useNavigate();
   // State
@@ -19,7 +16,6 @@ export default function LoginView() {
   // 6 nuevo username, click para continuar
   // 7 username no existe
   const [state, setState] = useState(0);
-
 
   async function handleOnClick() {
     const googleProvider = new GoogleAuthProvider();
@@ -36,25 +32,25 @@ export default function LoginView() {
   }
 
   function handleUserLoggedIn(user) {
-    navigate('/dashboard')
+    navigate("/dashboard");
   }
   function handleUserNotRegistered(user) {
-    console.log('aaaa')
-    navigate('/choose-username')
+    console.log("aaaa");
+    navigate("/choose-username");
   }
   function handleUserNotLoggedIn() {
-    setState(4)
+    setState(4);
   }
-
- 
 
   if (state === 4) {
     return (
       <div className={style.LoginView}>
         <div>
-          <h1>Link tree</h1>
+          <h1>React + Fiebase Template ⚡</h1>
         </div>
-        <button className={style.provider} onClick={handleOnClick}>Login with Google</button>
+        <button className={style.provider} onClick={handleOnClick}>
+          Login with Google
+        </button>
       </div>
     );
   }
@@ -67,10 +63,11 @@ export default function LoginView() {
     );
   }
   return (
-    <AuthProvider 
+    <AuthProvider
       onUserLoggedIn={handleUserLoggedIn}
       onUserNotRegistered={handleUserNotRegistered}
-      onUserNotLoggedIn={handleUserNotLoggedIn}>
+      onUserNotLoggedIn={handleUserNotLoggedIn}
+    >
       <div>Loading...</div>
     </AuthProvider>
   );

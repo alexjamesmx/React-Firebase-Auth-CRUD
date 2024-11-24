@@ -5,10 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Firebase Login, Dashboard and Basic CRUD operations with
-          React/Firebase
-        </p>
+        <p>React + Firebase Login, Dashboard and Basic CRUD operations</p>
         <a
           className="App-link"
           href="dashboard"
