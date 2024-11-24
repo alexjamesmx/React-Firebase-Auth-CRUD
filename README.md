@@ -2,6 +2,8 @@
 
 <h1 align="center">React + Firebase (Auth, database, storage) Ready-To-Go Template</h1>
 
+Demo: [Firebase + React App](https://project2.alexjamesmx.dev/)
+
 <div align="center">
     <img src="https://img.shields.io/badge/React-17.0.2-blue" alt="React version" />
     <img src="https://img.shields.io/badge/Firebase-8.6.1-orange" alt="Firebase version" />
